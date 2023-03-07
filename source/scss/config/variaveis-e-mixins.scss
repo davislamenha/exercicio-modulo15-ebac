@@ -1,0 +1,20 @@
+// RESPONSIVIDADE
+$l: 1440px;
+$m: 1024px;
+$p: 767px;
+
+@mixin tela($tamanho) {
+  @if $tamanho == l {
+    @media (max-width: #{$l}) {
+      @content;
+    }
+  } @else if $tamanho == m {
+    @media (max-width: #{$m}) {
+      @content;
+    }
+  } @else if $tamanho == p {
+    @media (max-width: #{$p}) {
+      @content;
+    }
+  }
+}

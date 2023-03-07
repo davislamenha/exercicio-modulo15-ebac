@@ -1,0 +1,23 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w --no-source-map source/scss/main.scss:build/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davislamenha/exercicio-modulo15-ebac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davislamenha/exercicio-modulo15-ebac/issues"
+  },
+  "homepage": "https://github.com/davislamenha/exercicio-modulo15-ebac#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}

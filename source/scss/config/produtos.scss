@@ -1,0 +1,43 @@
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+
+  @include tela(m) {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+
+  @include tela(p) {
+    display: block;
+  }
+
+  .product-item {
+    img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    @include tela(p) {
+      margin-bottom: 32px;
+    }
+
+    .product-button {
+      display: block;
+      background-color: $cor-p2;
+      color: $cor-branco;
+      text-align: center;
+      padding: 8px 0;
+      border-radius: 8px;
+      margin-top: 8px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $cor-p1;
+      }
+    }
+  }
+}
