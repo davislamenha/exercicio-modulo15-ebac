@@ -19,10 +19,6 @@ a {
   margin: 0 auto;
 }
 
-body {
-  background-color: #f5f6fa;
-}
-
 header {
   background-color: #182c61;
   position: sticky;
@@ -45,6 +41,10 @@ header .menu li {
 header .menu li a {
   color: #fff;
   text-decoration: none;
+}
+
+body {
+  background-color: #f5f6fa;
 }
 
 section {
