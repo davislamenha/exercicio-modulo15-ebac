@@ -1,13 +1,14 @@
-@use 'config/reset.scss';
-@use 'config/cores.scss';
-@use 'config/geral.scss';
+@import 'config/reset.scss';
+@import 'config/cores.scss';
+@import 'config/geral.scss';
+@import 'config/variaveis-e-mixins.scss';
 
 body {
-  background-color: cores.$cor-bg;
+  background-color: $cor-bg;
 }
 
 header {
-  background-color: cores.$cor-s1;
+  background-color: $cor-s1;
   position: sticky;
   top: 0;
   left: 0;
@@ -28,7 +29,7 @@ header {
     }
 
     li a {
-      color: cores.$cor-branco;
+      color: $cor-branco;
       text-decoration: none;
     }
   }
@@ -54,8 +55,8 @@ section {
 
     .product-button {
       display: block;
-      background-color: cores.$cor-p2;
-      color: cores.$cor-branco;
+      background-color: $cor-p2;
+      color: $cor-branco;
       text-align: center;
       padding: 8px 0;
       border-radius: 8px;
@@ -63,7 +64,7 @@ section {
       text-decoration: none;
 
       &:hover {
-        background-color: cores.$cor-p1;
+        background-color: $cor-p1;
       }
     }
   }
