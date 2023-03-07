@@ -18,6 +18,11 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+}
 
 body {
   background-color: #f5f6fa;
@@ -59,9 +64,25 @@ header .menu li a {
   row-gap: 4%;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media (max-width: 767px) {
+  .products {
+    display: block;
+  }
+}
 .products .product-item img {
   width: 100%;
   border-radius: 16px;
+}
+@media (max-width: 767px) {
+  .products .product-item {
+    margin-bottom: 32px;
+  }
 }
 .products .product-item .product-button {
   display: block;

@@ -6,10 +6,23 @@
   row-gap: 4%;
   width: 100%;
 
+  @include tela(m) {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+
+  @include tela(p) {
+    display: block;
+  }
+
   .product-item {
     img {
       width: 100%;
       border-radius: 16px;
+    }
+
+    @include tela(p) {
+      margin-bottom: 32px;
     }
 
     .product-button {
