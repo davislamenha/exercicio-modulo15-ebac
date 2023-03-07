@@ -4,14 +4,6 @@
 @import 'config/variaveis-e-mixins.scss';
 @import 'config/header.scss';
 
-body {
-  background-color: $cor-bg;
-}
-
-section {
-  padding: 56px 0;
-}
-
 .products {
   margin-top: 40px;
   display: grid;
